@@ -18,33 +18,40 @@
   
 
 
-    <h1>Cadastro Novo Cliente</h1>
+    
 
     <form id="form" method="post" action="cadastro.php">
-        <div class="name">
-          <label>Nome</label>
-          <input type="text" />
-        </div>
+        <fieldset class="container">
+          
+          <h1>Cadastro Novo Cliente</h1>
 
-        <div  class="email">
-          <label>Email</label>
-          <input type="text" />
-        </div>
+          <div class="name">
+            <label> Nome</label>
+            <input name="name" type="text" />
+          </div>
 
-        <div class="phone"> 
-          <label>Telefone</label>
-          <input type="text" />
-        </div>
-
-        <div class="address">
-          <label>Endereço</label>
-          <input type="text" />
-        </div>
+          <div  class="email">
+            <label>Email</label>
+            <input name="email" type="text" />
+          </div>
+  
+          <div class="phone"> 
+            <label>Telefone</label>
+            <input name="phone" type="text" />
+          </div>
+  
+          <div class="address">
+            <label>Endereço</label>
+            <input  name="address" type="text" />
+          </div>
+          
+          <div class="button">
+            <input name="cadastrar" type="submit" id="cadastrar" value="Concluir Cadastro!" />  
+            <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />  
+          </div>
+        </fieldset>
         
-        <div class="button">
-          <input name="cadastrar" type="submit" id="cadastrar" value="Concluir Cadastro!" />  
-          <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />  
-        </div>
+
     </form>
  
 </body>

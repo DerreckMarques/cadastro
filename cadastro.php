@@ -36,7 +36,6 @@
           <td>E-mail</td> 
           <td>Telefone</td> 
           <td>Enderço</td>
-          <td>Ação</td> 
         </tr>
         <?php
             $sql = mysqli_query($conexao, "SELECT * FROM `clientes`;");
@@ -47,11 +46,7 @@
           <td><?php echo $dado['nome']; ?></td>
           <td><?php echo $dado['email']; ?></td> 
           <td><?php echo $dado['telefone']; ?></td> 
-          <td><?php echo $dado['endereço']; ?></td> 
-          <td> 
-            <a href="usu_editar.php?codigo=<?php echo $dado['id']; ?>">Editar</a> 
-            <a href="usu_excluir.php?codigo=<?php echo $dado['id']; ?>">Excluir</a> 
-          </td> 
+          <td><?php echo $dado['endereço']; ?></td>  
         </tr> 
         <?php } ?> 
       </table>

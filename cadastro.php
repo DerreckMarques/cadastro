@@ -14,7 +14,7 @@
     // RECEBENDO OS DADOS PREENCHIDOS DO FORMULÁRIO !
     $name = $_POST ["name"]; //atribuição do campo "nome" vindo do formulário para variavel
     $email = $_POST ["email"]; //atribuição do campo "email" vindo do formulário para variavel
-    $phone = $_POST ["phone"]; //atribuição do campo "ddd" vindo do formulário para variavel
+    $phone = $_POST ["phone"];
     $address = $_POST ["address"];
     
     $conexao = mysqli_connect($host,$db, $senhadb);

@@ -1,0 +1,24 @@
+
+create database cliente;
+
+CREATE TABLE clientes ( id INT auto_increment PRIMARY KEY, nome text, ema
+il text, telefone text, endereço text);
+
+CREATE USER 'cliente'@'localhost' IDENTIFIED BY '123456';
+
+GRANT ALL PRIVILEGES ON * . * TO 'cliente'@'localhost';
+
+FLUSH PRIVILEGES;
+
+INSERT INTO clientes (nome, email, telefone, endereço) VALUES ('teste', 'teste@', 'teste-tel', 'teste-end');  
+
+$query = "INSERT INTO `clientes` ( `nome` , `email` , `telefone` , `endereço`)
+    VALUES ('$name', '$email', '$phone', '$address')";
+
+SELECT * FROM clientes;
+
+DELETE from cliente WHERE id=2
+  
+
+
+
